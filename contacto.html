@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto_estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Trocchi&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+        
+    <header>
+        <div class="contenedor">
+            <div class="menu">
+                <img src="imagenes/logo.jpg" alt="">
+                <img class="menu-icon" src="imagenes/menu.jpg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="entrenadores.html">Entrenadores</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="registro.html">Registrate</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="titular">
+            <h1>Realiza tú registro ya</h1>
+            <a href="registro.html">Ingresa ahora</a>
+        </div>
+    </header>
+
+    <section id="tarjetas">
+        <div class="contenedor">
+            <div class="contenedor-tarjetas">
+                <div id="segunda-tarjeta" class="tarjeta">
+                    <img src="imagenes/logo.jpeg" alt="">
+                    <h3></h3>
+                    <p><p><i class="fa-solid fa-phone"></i>+(52) 5578273892</p></p>
+                    <p><i class="fa-solid fa-envelope"></i>losmuñes@gmail.com</p>
+                    <p><i class="fa-brands fa-facebook"></i>Los Muñes Oficial</p>
+                    <p><i class="fa-brands fa-instagram-square"></i>Los Muñes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="contenedor">
+            <h2>Contáctanos</h2>
+            <div class="info">
+                <p><i class="fa-solid fa-phone"></i>+(52) 5578273892</p>
+            </div>
+            <div class="info">
+                <p><i class="fa-solid fa-envelope"></i>losmuñes@gmail.com</p>
+            </div>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $('.foto').hover(function(){
+                $(this).find('.oculto').fadeIn();
+                $(this).find('.img-hover').addClass('agrandar');
+            }, function()
+            {
+                $(this).find('.oculto').fadeOut();
+                $(this).find('.img-hover').removeClass('agrandar');
+            })
+
+            $('.menu-icon').click(function(){
+                $('nav').slideToggle();
+            })
+        })
+    </script>
+
+</body>
+</html>
